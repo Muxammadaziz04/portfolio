@@ -1,22 +1,22 @@
+const projectBtn = document.getElementById('projectBtn')
+const skillBtn = document.getElementById('skillBtn')
 
-const tabs = document.querySelectorAll('[data-target]'),
-      tabContents = document.querySelectorAll('[data-content]')
+const projectsBlock = document.getElementById('projects')
+const skillsBlock = document.getElementById('skills')
 
-tabs.forEach(tab =>{
-    tab.addEventListener('click', () =>{
-        const target = document.querySelector(tab.dataset.target)
+projectBtn.onclick = () => {
+    projectBtn.classList.add('filter-tab-active')
+    skillBtn.classList.remove('filter-tab-active')
+    projectsBlock.classList.add('filters__active')
+    skillsBlock.classList.remove('filters__active')
+}
 
-        tabContents.forEach(tc =>{
-            tc.classList.remove('filters__active')
-        })
-        target.classList.add('filters__active')
-
-        tabs.forEach(t =>{
-            t.classList.remove('filter-tab-active')
-        })
-        tab.classList.add('filter-tab-active')
-    })
-})
+skillBtn.onclick = () => {
+    projectBtn.classList.remove('filter-tab-active')
+    skillBtn.classList.add('filter-tab-active')
+    projectsBlock.classList.remove('filters__active')
+    skillsBlock.classList.add('filters__active')
+}
 
 
 const themeButton = document.getElementById('theme-button')
