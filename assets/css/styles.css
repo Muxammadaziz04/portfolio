@@ -1,7 +1,6 @@
-/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
 
   --hue: 207;
@@ -35,7 +34,7 @@
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -68,7 +67,7 @@ img {
   height: auto;
 }
 
-/*=============== THEME ===============*/
+
 .change-theme {
   position: absolute;
   top: 1.5rem;
@@ -83,7 +82,7 @@ img {
   color: var(--first-color);
 }
 
-/*========== Variables Dark theme ==========*/
+
 body.dark-theme {
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
@@ -116,7 +115,7 @@ body.dark-theme {
   background-color: hsl(var(--hue), 8%, 32%);
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 968px;
   margin-left: 1.5rem;
@@ -128,7 +127,7 @@ body.dark-theme {
   gap: 1.5rem;
 }
 
-/*=============== PROFILE ===============*/
+
 .profile {
   position: relative;
   padding-top: 3.5rem;
@@ -233,7 +232,7 @@ body.dark-theme {
   column-gap: .25rem;
 }
 
-/*=============== BUTTONS ===============*/
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -268,7 +267,7 @@ body.dark-theme {
   background-color: var(--text-color-light);
 }
 
-/*=============== FILTERS TABS===============*/
+
 .filters__content {
   margin: 2rem 0 2.5rem;
   background-color: var(--text-color-lighten);
@@ -298,7 +297,7 @@ body.dark-theme {
   background-color: var(--body-color);
 }
 
-/*=============== PROJECTS ===============*/
+
 .projects__card {
   position: relative;
   border-radius: 1rem;
@@ -348,7 +347,7 @@ body.dark-theme {
   bottom: 0;
 }
 
-/*=============== SKILLS ===============*/
+
 .skills__content {
   row-gap: 3.5rem;
 }
@@ -391,7 +390,7 @@ body.dark-theme {
   font-size: var(--smaller-font-size);
 }
 
-/* Hide and show projects & skills */
+
 .filters [data-content] {
   display: none;
 }
@@ -400,12 +399,12 @@ body.dark-theme {
   display: grid;
 }
 
-/* Activate button filter */
+
 .filter-tab-active {
   background-color: var(--body-color);
 }
 
-/*=============== FOOTER ===============*/
+
 .footer__copy {
   display: block;
   margin: 2.5rem 0 2rem;
@@ -414,7 +413,7 @@ body.dark-theme {
   color: var(--text-color-light);
 }
 
-/*=============== SCROLL BAR ===============*/
+
 ::-webkit-scrollbar {
   width: .6rem;
   border-radius: .5rem;
@@ -450,7 +449,7 @@ body.dark-theme {
   }
 }
 
-/* For medium devices */
+
 @media screen and (min-width: 576px) {
   .projects__content {
     grid-template-columns: 332px;
@@ -475,7 +474,7 @@ body.dark-theme {
   }
 }
 
-/* For large devices */
+
 @media screen and (min-width: 992px) {
   .container {
     margin-left: auto;
